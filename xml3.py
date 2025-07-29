@@ -1,8 +1,8 @@
-import xml.dom.minidom
+import defusedxml.minidom
 
 def main():
 
-    doc = xml.dom.minidom.parse("Output.xml")
+    doc = defusedxml.minidom.parse("Output.xml")
 
     print (doc.firstChild.tagName)
     expertise = doc.getElementsByTagName("student")
